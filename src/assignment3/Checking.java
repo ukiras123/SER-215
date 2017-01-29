@@ -12,7 +12,7 @@ public class Checking extends Account {
 		super(accountId, balance, annualInterestRate);
 	}
 
-	//Validation to stop transaction if withdraw more than overDraftLimit
+	//Validation to ignore the transaction if withdraw more than overDraftLimit
 	public void withdraw(double withdrawAmount) {
 		double balance = getBalance();
 		double remainingBalance = balance - withdrawAmount;

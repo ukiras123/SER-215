@@ -10,7 +10,7 @@ public class Savings extends Account {
 		super(accountId, balance, annualInterestRate);
 	}
 
-	//Validation to stop transaction if withdraw more than balance
+	//Validation to ignore the transaction if withdraw more than balance
 	public void withdraw(double withdrawAmount) {
 		double balance = getBalance();
 		double remainingBalance = balance - withdrawAmount;

@@ -22,6 +22,7 @@ public class TestAccount {
 		getCheckingInfo(); // Getting required info from user to open checking account 
 		getSavingInfo();  // Getting required information from user to open saving account
 		
+		//Creating checking and saving account's objects.
 		Savings savingAccount = new Savings(savingAccountId, savingBalance, savingInterestRate);
 		Checking checkingAccount = new Checking(checkingAccountId, checkingBalance,checkingInterestRate);
 		
